@@ -10,17 +10,24 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      videos: []};
-    YTSearch({key: API_KEY, term: 'surfboards'}, (data) => {
-      this.setState({videos: data});
+      videos: [],
+      selectedVideo: null
+    };
+    YTSearch({key: API_KEY, term: 'Chance The Rapper'}, (videos) => {
+      this.setState({
+        videos: videos,
+        selectedVideo: videos[0]
+      });
     });
   }
   render() {
     return(
       <div>
         <h1 className="main_header">Mini YouTube</h1>
-        <VideoDetail video={this.state.videos[0]} />
-        <VideoList videos={this.state.videos} />
+        <VideoDetail video={this.state.selectedVideo} />
+        <VideoList
+          videos={this.state.videos}
+          onVideoSelect = {selectedVideo => this.setState({selectedVideo})} />
       </div>
       )
   }
