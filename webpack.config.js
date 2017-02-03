@@ -20,8 +20,7 @@ module.exports = {
     {
       test: /\.css$/,
       loaders:[
-          'style-loader',
-          'css-loader?modules&importLoaders=1&localIdentName=[name]_[local]_[hash:base64:5]'
+          'style-loader!css-loader'
           ],
     }
     ]
