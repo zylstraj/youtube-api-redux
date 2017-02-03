@@ -26,7 +26,7 @@ class App extends React.Component {
   }
   render() {
     return(
-      <div>
+      <div className="main_div">
         <h1 className="main_header">Mini YouTube</h1>
         <SearchBar onSearchTermChange={term => this.videoSearch(term)} />
         <VideoDetail video={this.state.selectedVideo} />
