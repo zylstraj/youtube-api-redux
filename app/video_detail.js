@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './style.css';
 
 const VideoDetail = ({video}) => {
   if(!video) {
@@ -8,8 +9,8 @@ const VideoDetail = ({video}) => {
   const url = `https://www.youtube.com/embed/${videoId}`;
   return (
   <div className="video_detail">
-    <div className="video_detail_1">
-    <iframe className="videodt_iframe" src={url}></iframe>
+    <div className={styles.video_detail_1}>
+    <iframe className="videodt_iframe" src={url} frameborder="0" allowfullscreen></iframe>
     </div>
     <div className="video_detail_2">
       <div>{video.snippet.title}</div>
