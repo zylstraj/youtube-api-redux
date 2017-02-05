@@ -120,7 +120,7 @@
 	
 	      return _react2.default.createElement(
 	        "div",
-	        null,
+	        { className: "main_div" },
 	        _react2.default.createElement(
 	          "h1",
 	          { className: "main_header" },
@@ -23475,7 +23475,7 @@
   \*****************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -23492,31 +23492,31 @@
 	
 	  if (!video) {
 	    return _react2.default.createElement(
-	      'div',
+	      "div",
 	      null,
-	      'Loading...'
+	      "Loading..."
 	    );
 	  }
 	  var videoId = video.id.videoId;
-	  var url = 'https://www.youtube.com/embed/' + videoId;
+	  var url = "https://www.youtube.com/embed/" + videoId;
 	  return _react2.default.createElement(
-	    'div',
-	    null,
+	    "div",
+	    { className: "video_detail" },
 	    _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement('iframe', { src: url })
+	      "div",
+	      { className: "video_detail_1" },
+	      _react2.default.createElement("iframe", { className: "videodt_iframe", src: url })
 	    ),
 	    _react2.default.createElement(
-	      'div',
-	      null,
+	      "div",
+	      { className: "video_detail_2" },
 	      _react2.default.createElement(
-	        'div',
+	        "div",
 	        null,
 	        video.snippet.title
 	      ),
 	      _react2.default.createElement(
-	        'div',
+	        "div",
 	        null,
 	        video.snippet.description
 	      )
@@ -23571,8 +23571,9 @@
 	
 	      return _react2.default.createElement(
 	        "div",
-	        null,
+	        { className: "input_value" },
 	        _react2.default.createElement("input", {
+	          className: "input_class",
 	          value: this.state.term,
 	          onChange: function onChange(event) {
 	            return _this2.onInputChange(event.target.value);

@@ -19,8 +19,10 @@ module.exports = {
     },
     {
       test: /\.css$/,
+      include: path.resolve(__dirname, 'app'),
       loaders:[
-          'style-loader!css-loader'
+          'style-loader',
+          'css-loader?modules&importLoaders=1&localIdentName=[name]_[local]_[hash:base64:5]'
           ],
     }
     ]
