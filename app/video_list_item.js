@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './style.css'
 
 const VideoListItem = (props) => {
   const video = props.video;
@@ -7,7 +8,7 @@ const VideoListItem = (props) => {
   console.log(video);
   return (
     <li onClick={() => onVideoSelect(video)}>
-    <img className="fun" src={imageUrl} />
+    <img className={styles.fun} src={imageUrl} />
       <div>
       {video.snippet.title}
       </div>
