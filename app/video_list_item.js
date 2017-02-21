@@ -4,11 +4,11 @@ import styles from './style.css'
 const VideoListItem = (props) => {
   const video = props.video;
   const onVideoSelect = props.onVideoSelect;
-  const imageUrl = video.snippet.thumbnails.default.url;
+  const imageUrl = video.snippet.thumbnails.medium.url;
   console.log(video);
   return (
-    <li onClick={() => onVideoSelect(video)}>
-    <img className={styles.fun} src={imageUrl} />
+    <li className={styles.fun} onClick={() => onVideoSelect(video)}>
+    <img src={imageUrl} />
       <div>
       {video.snippet.title}
       </div>

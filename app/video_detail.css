@@ -1,0 +1,22 @@
+.videodt_iframe {
+  width: 90%;
+  height: 250px;
+}
+.video_detail {
+  width: 100%;
+  text-align: center;
+}
+.video_detail_1 {
+  text-align: center;
+}
+.video_detail_2 {
+  text-align: center;
+}
+.video_title, .video_description {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  padding: .5em 0 1em 0;
+}
+.video_title {
+  font-weight: bold;
+}
