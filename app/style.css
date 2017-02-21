@@ -1,10 +1,17 @@
 ul li {
   list-style-type: none;
-}
-.videodt_iframe {
-  border: 20px solid #0B2C39;
-  width: 100%;
-}
-.video_detail_1 {
   text-align: center;
+}
+.fun {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin-top: .5em;
+}
+.main_header {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+.main_div {
+  background-color: #f9f9f9;
 }

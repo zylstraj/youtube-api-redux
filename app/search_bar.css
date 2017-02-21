@@ -1,0 +1,11 @@
+.input_value {
+  width: 100%;
+  padding-bottom: 1em;
+  text-align: center;
+}
+.input_class {
+  height: 2em;
+  width: 75%;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+}

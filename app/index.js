@@ -4,6 +4,7 @@ import YTSearch from 'youtube-api-search';
 import VideoList from './video_list';
 import VideoDetail from './video_detail';
 import SearchBar from './search_bar';
+import styles from './style.css';
 
 const API_KEY = 'AIzaSyBs8HechEIQEcpnJLWHwNS_CYLEU5-XROA';
 
@@ -26,8 +27,8 @@ class App extends React.Component {
   }
   render() {
     return(
-      <div className="main_div">
-        <h1 className="main_header">Mini YouTube</h1>
+      <div className={styles.main_div}>
+        <h1 className={styles.main_header}>Mini YouTube</h1>
         <SearchBar onSearchTermChange={term => this.videoSearch(term)} />
         <VideoDetail video={this.state.selectedVideo} />
         <VideoList

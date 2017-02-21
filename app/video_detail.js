@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './style.css';
+import styles from './video_detail.css';
 
 const VideoDetail = ({video}) => {
   if(!video) {
@@ -10,11 +10,11 @@ const VideoDetail = ({video}) => {
   return (
   <div className="video_detail">
     <div className={styles.video_detail_1}>
-    <iframe className="videodt_iframe" src={url} frameborder="0" allowfullscreen></iframe>
+    <iframe className={styles.videodt_iframe} src={url} frameborder="0" allowfullscreen></iframe>
     </div>
-    <div className="video_detail_2">
-      <div>{video.snippet.title}</div>
-      <div>{video.snippet.description}</div>
+    <div className={styles.video_detail_2}>
+      <div className={styles.video_title}>{video.snippet.title}</div>
+      <div className={styles.video_description}>{video.snippet.description}</div>
     </div>
   </div>
     )
