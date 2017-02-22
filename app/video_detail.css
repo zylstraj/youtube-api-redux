@@ -1,3 +1,4 @@
+
 .videodt_iframe {
   width: 90%;
   height: 250px;
@@ -19,4 +20,17 @@
 }
 .video_title {
   font-weight: bold;
+}
+@media (min-width: 760px) {
+  .video_detail {
+    width: 70%;
+  }
+  .videodt_iframe {
+    height: 350px;
+  }
+}
+@media (min-width: 860px) {
+  .videodt_iframe {
+    height: 450px
+  }
 }
