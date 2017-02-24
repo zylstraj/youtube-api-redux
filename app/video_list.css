@@ -1,0 +1,24 @@
+ul li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.ul_youtube {
+  width: 95%;
+  text-align: center;
+  margin-right: 5%;
+}
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+@media (min-width: 760px) {
+.ul_youtube {
+  width: 25%;
+  float: right;
+  text-align: center;
+  margin-right: 4%;
+  border-left: 1px solid black;
+}
+}

@@ -24,6 +24,7 @@
 @media (min-width: 760px) {
   .video_detail {
     width: 70%;
+    float: left;
   }
   .videodt_iframe {
     height: 350px;
@@ -32,5 +33,11 @@
 @media (min-width: 860px) {
   .videodt_iframe {
     height: 450px
+  }
+}
+
+@media (min-width: 1200px) {
+  .videodt_iframe {
+    height: 600px
   }
 }
