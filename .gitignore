@@ -1,3 +1,7 @@
+bundle.js
+/build
+/build/bundle.js.map
+
 # Logs
 logs
 *.log

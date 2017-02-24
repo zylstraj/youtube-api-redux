@@ -21,3 +21,7 @@ ul li {
 .fun:hover {
   opacity: .65;
 }
+#youtube_logo {
+  height: 60px;
+  width: 100px;
+}
