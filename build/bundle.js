@@ -67,11 +67,11 @@
 	
 	var _video_list2 = _interopRequireDefault(_video_list);
 	
-	var _video_detail = __webpack_require__(/*! ./video_detail */ 198);
+	var _video_detail = __webpack_require__(/*! ./video_detail */ 200);
 	
 	var _video_detail2 = _interopRequireDefault(_video_detail);
 	
-	var _search_bar = __webpack_require__(/*! ./search_bar */ 201);
+	var _search_bar = __webpack_require__(/*! ./search_bar */ 203);
 	
 	var _search_bar2 = _interopRequireDefault(_search_bar);
 	
@@ -23118,9 +23118,9 @@
 	
 	var _video_list_item2 = _interopRequireDefault(_video_list_item);
 	
-	var _style = __webpack_require__(/*! ./style.css */ 194);
+	var _video_list = __webpack_require__(/*! ./video_list.css */ 198);
 	
-	var _style2 = _interopRequireDefault(_style);
+	var _video_list2 = _interopRequireDefault(_video_list);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -23132,7 +23132,12 @@
 	
 	  return _react2.default.createElement(
 	    'div',
-	    { className: _style2.default.ul_youtube },
+	    { className: _video_list2.default.ul_youtube },
+	    _react2.default.createElement(
+	      'h2',
+	      null,
+	      'Video Results'
+	    ),
 	    _react2.default.createElement(
 	      'ul',
 	      null,
@@ -23553,6 +23558,54 @@
 
 /***/ },
 /* 198 */
+/*!****************************!*\
+  !*** ./app/video_list.css ***!
+  \****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(/*! !../~/css-loader?modules&importLoaders=1&localIdentName=[name]_[local]_[hash:base64:5]!./video_list.css */ 199);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(/*! ../~/style-loader/addStyles.js */ 197)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!../node_modules/css-loader/index.js?modules&importLoaders=1&localIdentName=[name]_[local]_[hash:base64:5]!./video_list.css", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js?modules&importLoaders=1&localIdentName=[name]_[local]_[hash:base64:5]!./video_list.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 199 */
+/*!*****************************************************************************************************************!*\
+  !*** ./~/css-loader?modules&importLoaders=1&localIdentName=[name]_[local]_[hash:base64:5]!./app/video_list.css ***!
+  \*****************************************************************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(/*! ../~/css-loader/lib/css-base.js */ 196)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "ul li {\r\n  list-style-type: none;\r\n  text-align: center;\r\n}\r\n.video_list_ul_youtube_NQ_ay {\r\n  width: 25%;\r\n  float: right;\r\n}\r\n", ""]);
+	
+	// exports
+	exports.locals = {
+		"ul_youtube": "video_list_ul_youtube_NQ_ay"
+	};
+
+/***/ },
+/* 200 */
 /*!*****************************!*\
   !*** ./app/video_detail.js ***!
   \*****************************/
@@ -23568,7 +23621,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _video_detail = __webpack_require__(/*! ./video_detail.css */ 199);
+	var _video_detail = __webpack_require__(/*! ./video_detail.css */ 201);
 	
 	var _video_detail2 = _interopRequireDefault(_video_detail);
 	
@@ -23588,7 +23641,7 @@
 	  var url = 'https://www.youtube.com/embed/' + videoId;
 	  return _react2.default.createElement(
 	    'div',
-	    { className: 'video_detail' },
+	    { className: _video_detail2.default.video_detail },
 	    _react2.default.createElement(
 	      'div',
 	      { className: _video_detail2.default.video_detail_1 },
@@ -23613,7 +23666,7 @@
 	exports.default = VideoDetail;
 
 /***/ },
-/* 199 */
+/* 201 */
 /*!******************************!*\
   !*** ./app/video_detail.css ***!
   \******************************/
@@ -23622,7 +23675,7 @@
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !../~/css-loader?modules&importLoaders=1&localIdentName=[name]_[local]_[hash:base64:5]!./video_detail.css */ 200);
+	var content = __webpack_require__(/*! !../~/css-loader?modules&importLoaders=1&localIdentName=[name]_[local]_[hash:base64:5]!./video_detail.css */ 202);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(/*! ../~/style-loader/addStyles.js */ 197)(content, {});
@@ -23642,7 +23695,7 @@
 	}
 
 /***/ },
-/* 200 */
+/* 202 */
 /*!*******************************************************************************************************************!*\
   !*** ./~/css-loader?modules&importLoaders=1&localIdentName=[name]_[local]_[hash:base64:5]!./app/video_detail.css ***!
   \*******************************************************************************************************************/
@@ -23653,7 +23706,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".video_detail_videodt_iframe_m1F3V {\r\n  width: 90%;\r\n  height: 250px;\r\n}\r\n.video_detail_video_detail_25vB8 {\r\n  width: 100%;\r\n  text-align: center;\r\n}\r\n.video_detail_video_detail_1_3QZW6 {\r\n  text-align: center;\r\n}\r\n.video_detail_video_detail_2_2lk7j {\r\n  text-align: center;\r\n}\r\n.video_detail_video_title_3l9cd, .video_detail_video_description_3_TGz {\r\n  font-family: 'Roboto', sans-serif;\r\n  font-weight: 300;\r\n  padding: .5em 0 1em 0;\r\n}\r\n.video_detail_video_title_3l9cd {\r\n  font-weight: bold;\r\n}\r\n", ""]);
+	exports.push([module.id, "\r\n.video_detail_videodt_iframe_m1F3V {\r\n  width: 90%;\r\n  height: 250px;\r\n}\r\n.video_detail_video_detail_25vB8 {\r\n  width: 100%;\r\n  text-align: center;\r\n}\r\n.video_detail_video_detail_1_3QZW6 {\r\n  text-align: center;\r\n}\r\n.video_detail_video_detail_2_2lk7j {\r\n  text-align: center;\r\n}\r\n.video_detail_video_title_3l9cd, .video_detail_video_description_3_TGz {\r\n  font-family: 'Roboto', sans-serif;\r\n  font-weight: 300;\r\n  padding: .5em 0 1em 0;\r\n}\r\n.video_detail_video_title_3l9cd {\r\n  font-weight: bold;\r\n}\r\n@media (min-width: 760px) {\r\n  .video_detail_video_detail_25vB8 {\r\n    width: 70%;\r\n    float: left;\r\n  }\r\n  .video_detail_videodt_iframe_m1F3V {\r\n    height: 350px;\r\n  }\r\n}\r\n@media (min-width: 860px) {\r\n  .video_detail_videodt_iframe_m1F3V {\r\n    height: 450px\r\n  }\r\n}\r\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -23666,7 +23719,7 @@
 	};
 
 /***/ },
-/* 201 */
+/* 203 */
 /*!***************************!*\
   !*** ./app/search_bar.js ***!
   \***************************/
@@ -23684,7 +23737,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _search_bar = __webpack_require__(/*! ./search_bar.css */ 202);
+	var _search_bar = __webpack_require__(/*! ./search_bar.css */ 204);
 	
 	var _search_bar2 = _interopRequireDefault(_search_bar);
 	
@@ -23738,7 +23791,7 @@
 	exports.default = SearchBar;
 
 /***/ },
-/* 202 */
+/* 204 */
 /*!****************************!*\
   !*** ./app/search_bar.css ***!
   \****************************/
@@ -23747,7 +23800,7 @@
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !../~/css-loader?modules&importLoaders=1&localIdentName=[name]_[local]_[hash:base64:5]!./search_bar.css */ 203);
+	var content = __webpack_require__(/*! !../~/css-loader?modules&importLoaders=1&localIdentName=[name]_[local]_[hash:base64:5]!./search_bar.css */ 205);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(/*! ../~/style-loader/addStyles.js */ 197)(content, {});
@@ -23767,7 +23820,7 @@
 	}
 
 /***/ },
-/* 203 */
+/* 205 */
 /*!*****************************************************************************************************************!*\
   !*** ./~/css-loader?modules&importLoaders=1&localIdentName=[name]_[local]_[hash:base64:5]!./app/search_bar.css ***!
   \*****************************************************************************************************************/
