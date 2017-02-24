@@ -12,6 +12,7 @@
 }
 .video_detail_2 {
   text-align: center;
+  border-top: .5px solid black;
 }
 .video_title, .video_description {
   font-family: 'Roboto', sans-serif;
@@ -30,14 +31,14 @@
     height: 350px;
   }
 }
-@media (min-width: 860px) {
+@media (min-width: 1024px) {
   .videodt_iframe {
     height: 450px
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .videodt_iframe {
-    height: 600px
+    height: 550px
   }
 }
