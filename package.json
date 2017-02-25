@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build",
-    "build": "webpack -d && webpack-dev-server --content-base app/ --inline --hot --port 2010"
+    "build": "webpack -d && webpack-dev-server --content-base app/ --inline --hot --port 2010",
+    "postinstall": "webpack -p"
   },
   "repository": {
     "type": "git",
@@ -22,9 +23,11 @@
   },
   "homepage": "https://github.com/zylstraj/youtube-api-redux#readme",
   "dependencies": {
+    "express": "^4.14.1",
     "lodash": "^4.17.4",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "youtube-api-search": "0.0.5"
   },
   "devDependencies": {
     "babel": "^6.5.2",
@@ -37,7 +40,6 @@
     "image-webpack-loader": "^3.2.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2",
-    "youtube-api-search": "0.0.5"
+    "webpack-dev-server": "^1.16.2"
   }
 }
