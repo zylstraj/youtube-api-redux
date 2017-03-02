@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run build",
+    "update": "npm run build",
     "build": "webpack -d && webpack-dev-server --content-base app/ --inline --hot --port 2010",
-    "postinstall": "webpack -p"
+    "postinstall": "webpack -p",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
